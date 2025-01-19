@@ -11,6 +11,7 @@ class PostController {
         userIds.push(item.user_id);
       });
 
+      // Calling auth service to get user details
       const response = await axios.post(
         `${process.env.AUTH_MS_BASEURL}/api/getUsers`,
         userIds
