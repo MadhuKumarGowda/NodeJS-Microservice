@@ -5,6 +5,7 @@ import "dotenv/config.js";
 const app = express();
 const PORT = process.env.PORT || 5200;
 // Define routes with ports
+// Here routes are read by .env file
 const routes = {
   "/auth": process.env.AUTH_MS_BASEURL,
   "/post": process.env.POST_MS_BASEURL,
