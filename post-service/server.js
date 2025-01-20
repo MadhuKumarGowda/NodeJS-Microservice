@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  return res.json({ message: "Its working" });
+  return res.json({ message: "Post Service is working" });
 });
 
 // Routes
